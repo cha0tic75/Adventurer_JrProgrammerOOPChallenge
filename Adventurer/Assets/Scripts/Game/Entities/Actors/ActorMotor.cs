@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace Project.Entities.Actors
+namespace Project.Game.Entities.Actors
 {
     [RequireComponent(typeof(Rigidbody2D))]
 	public abstract class ActorMotor : MonoBehaviour

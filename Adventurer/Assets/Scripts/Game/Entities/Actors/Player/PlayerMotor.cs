@@ -7,7 +7,7 @@
 using Project.Input;
 using UnityEngine;
 
-namespace Project.Entities.Actors
+namespace Project.Game.Entities.Actors
 {
     public class PlayerMotor : ActorMotor
 	{

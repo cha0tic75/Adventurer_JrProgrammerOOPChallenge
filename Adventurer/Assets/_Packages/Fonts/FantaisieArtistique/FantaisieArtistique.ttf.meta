@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 6e88e2975fc298c42a9fd2a0061bc7cc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - FantaisieArtistique
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1c13709d8b083ae419e5ccb45607db74, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
