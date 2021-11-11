@@ -6,17 +6,21 @@
 
 using UnityEngine;
 using Project.Game.Combat;
+using TMPro;
 
 namespace Project.Game.UI
 {
 	public class StatbarUI : MonoBehaviour
 	{
 		#region Inspector Assigned Field(s):
+		[SerializeField] private string m_displayName;
 		[SerializeField] private RectTransform m_fillImage;
+		[SerializeField] private TextMeshProUGUI m_statNameTMP;
 		[SerializeField] private StatbarDataProvider m_statbarDataProvider;
 		#endregion
 
 		#region MonoBehaviour Callback Method(s):
+		private void Awake() => m_statNameTMP?.SetText(m_displayName);
 		private void OnEnable() => m_statbarDataProvider.OnStatValueUpdatedEvent += Health_OnStatValueUpdatedCallback;
 		private void OnDisable() => m_statbarDataProvider.OnStatValueUpdatedEvent -= Health_OnStatValueUpdatedCallback;
 		#endregion
