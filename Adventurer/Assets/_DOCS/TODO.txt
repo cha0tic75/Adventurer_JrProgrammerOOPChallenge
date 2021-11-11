@@ -1,0 +1,7 @@
+TODO:
+11/10/21 -
+	- Add a concept of Health
+	- Add some enemies
+	- Add some interactables: Doors, Traps, Etc
+	- Add Concept of items
+	- Add some Objectives
