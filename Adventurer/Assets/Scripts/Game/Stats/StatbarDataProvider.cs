@@ -7,7 +7,7 @@
 using System;
 using UnityEngine;
 
-namespace Project.Game.Combat
+namespace Project.Game.Stats
 {
     public class StatbarDataProvider : MonoBehaviour
 	{
@@ -16,9 +16,13 @@ namespace Project.Game.Combat
 		#endregion
 
 		#region Inspector Assigned Field(s):
-		[SerializeField] protected MinMaxValue<int> m_threshold;
-		[SerializeField] protected int m_startValue;
+		[SerializeField] protected MinMaxValue<float> m_threshold;
+		[SerializeField] protected float m_startValue;
 		[SerializeField, ReadOnly] protected Stat m_stat;
+		#endregion
+
+		#region Properties:
+		public Stat Stat => m_stat;
 		#endregion
 
 		#region MonoBehaviour Callback Method(s):
@@ -28,16 +32,15 @@ namespace Project.Game.Combat
 		#endregion
 
 		#region Public API:
-		public void AlterValue(int _damageAmount)
+		public void AlterValue(float _damageAmount)
 		{
 			m_stat.AlterValue(_damageAmount);
-			Debug.Log("value altered!");
 			OnStatValueUpdatedEvent?.Invoke(m_stat);
 		}
 		#endregion
 
 		#region Callback(s):
-		protected virtual void Stat_OnStatValueUpdatedCallback(int _alteredValue, Stat _stat)
+		protected virtual void Stat_OnStatValueUpdatedCallback(float _alteredValue, Stat _stat)
 		{
 
 		}

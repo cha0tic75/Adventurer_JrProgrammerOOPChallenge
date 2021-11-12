@@ -21,12 +21,14 @@ namespace Project.Input
 		public event Action<Vector2> OnMoveInputActionEvent;
 		public event Action<bool> OnSprintInputActionEvent;
 		public event Action<bool> OnInteractInputActionEvent;
+		public event Action OnAttackInputActionEvent;
 		#endregion
 		
 		#region Public API:
 		public void OnMovement(InputValue _inputValue) => OnMoveInputActionEvent?.Invoke(_inputValue.Get<Vector2>());
 		public void OnSprint(InputValue _inputValue) => OnSprintInputActionEvent?.Invoke(IsPressed(_inputValue));
 		public void OnInteract(InputValue _inputValue) => OnInteractInputActionEvent?.Invoke(IsPressed(_inputValue));
+		public void OnAttack(InputValue _inputValue) => OnAttackInputActionEvent?.Invoke();
 		#endregion
 
 		#region Internally Used Method(s):

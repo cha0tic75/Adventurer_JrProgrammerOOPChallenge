@@ -7,28 +7,28 @@
 using System;
 using UnityEngine;
 
-namespace Project.Game.Combat
+namespace Project.Game.Stats
 {
     [System.Serializable]
 	public class Stat
 	{
 		#region Event/Delegate(s):
-		public event Action<int, Stat> OnStatValueUpdatedEvent; // alterValue, currentvalue, stat
+		public event Action<float, Stat> OnStatValueUpdatedEvent; // alterValue, currentvalue, stat
 		#endregion
 
 		#region Inspector Assigned Field(s):
-		[SerializeField] private MinMaxValue<int> m_threshold;
-		[SerializeField, ReadOnly] private int m_currentValue;
+		[SerializeField] private MinMaxValue<float> m_threshold;
+		[SerializeField, ReadOnly] private float m_currentValue;
 		#endregion
 
         #region Properties:
-        public int Currentvalue => m_currentValue;
-        public MinMaxValue<int> Threshold => m_threshold;
+        public float Currentvalue => m_currentValue;
+        public MinMaxValue<float> Threshold => m_threshold;
         #endregion
 
 		#region Constructor(s):
 		public Stat() {}
-		public Stat(MinMaxValue<int> _threshold, int _start)
+		public Stat(MinMaxValue<float> _threshold, float _start)
 		{
 			m_threshold = _threshold;
 			m_currentValue = _start;
@@ -36,12 +36,12 @@ namespace Project.Game.Combat
 		#endregion
 
 		#region Public API:
-		public void AlterValue(int _alterValue)
+		public void AlterValue(float _alterValue)
 		{
 			m_currentValue = Mathf.Clamp(m_currentValue + _alterValue, m_threshold.Min, m_threshold.Max);
 			OnStatValueUpdatedEvent?.Invoke(_alterValue, this);
 		}
-        public void AlterThreshold(MinMaxValue<int> _threshold) => m_threshold = _threshold;
+        public void AlterThreshold(MinMaxValue<float> _threshold) => m_threshold = _threshold;
 		#endregion
 	}
 }

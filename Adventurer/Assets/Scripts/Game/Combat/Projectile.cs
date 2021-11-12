@@ -4,6 +4,7 @@
 // Written by Tim McCune <tim.mccune1975@gmail.com>
 // ######################################################################
 
+using Project.Game.Stats;
 using UnityEngine;
 
 namespace Project.Game.Combat

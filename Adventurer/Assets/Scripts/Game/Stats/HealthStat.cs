@@ -4,7 +4,7 @@
 // Written by Tim McCune <tim.mccune1975@gmail.com>
 // ######################################################################
 
-namespace Project.Game.Combat
+namespace Project.Game.Stats
 {
     public class HealthStat : StatbarDataProvider
 	{
