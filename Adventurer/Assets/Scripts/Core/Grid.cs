@@ -103,7 +103,17 @@ namespace Project
 			}
 		}
 
-		private Vector3 GetWorldPosition(int _x, int _y) => new Vector3(_x, _y) * m_cellSize + m_gridOrigin;
+		public void DebugCell(int _x, int _y, float _duration, Color _color)
+		{
+			Debug.DrawLine(GetWorldPosition(_x, _y), GetWorldPosition(_x, _y + 1), _color, _duration);
+			Debug.DrawLine(GetWorldPosition(_x, _y + 1), GetWorldPosition(_x + 1, _y + 1), _color, _duration);
+			Debug.DrawLine(GetWorldPosition(_x + 1, _y + 1), GetWorldPosition(_x + 1, _y), _color, _duration);
+			Debug.DrawLine(GetWorldPosition(_x + 1, _y), GetWorldPosition(_x, _y), _color, _duration);
+			Debug.DrawLine(GetWorldPosition(_x, _y), GetWorldPosition(_x + 1, _y + 1), _color, _duration);
+			Debug.DrawLine(GetWorldPosition(_x, _y + 1), GetWorldPosition(_x + 1, _y), _color, _duration);
+		}
+
+		public Vector3 GetWorldPosition(int _x, int _y) => new Vector3(_x, _y) * m_cellSize + m_gridOrigin;
 		public Vector2Int GetXY(Vector3 _worldPosition)
 		{
 			int x = Mathf.FloorToInt((_worldPosition + m_gridOrigin).x / m_cellSize);

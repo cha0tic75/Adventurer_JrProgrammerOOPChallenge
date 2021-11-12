@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace Project.Game.Entities
 {
-	public enum RoomShape
+    public enum RoomShape
 	{
 		None = 0, 
 		Room_O = 100,
