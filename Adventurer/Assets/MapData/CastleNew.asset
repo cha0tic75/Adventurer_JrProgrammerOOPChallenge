@@ -1,0 +1,797 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9087d5c81817ae45a1ec27367d0e942, type: 3}
+  m_Name: CastleNew
+  m_EditorClassIdentifier: 
+  m_areaName: CastleNew
+  m_cellSize: 10
+  m_roomData:
+  - RoomShape: 600
+    Coordinates: {x: 25, y: 4}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 4}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 25, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 27, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 28, y: 4}
+    Rotation: 0
+  - RoomShape: 300
+    Coordinates: {x: 29, y: 4}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 25, y: 3}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 3}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 27, y: 3}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 28, y: 3}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 29, y: 3}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 2}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 2}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 28, y: 2}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 29, y: 2}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 27, y: 2}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 1}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 1}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 28, y: 1}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 29, y: 1}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 27, y: 1}
+    Rotation: 0
+  - RoomShape: 300
+    Coordinates: {x: 25, y: 0}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 0}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 27, y: 0}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 28, y: 0}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 25, y: 25}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 25, y: 26}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 25, y: 25}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 27}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 28}
+    Rotation: 90
+  - RoomShape: 300
+    Coordinates: {x: 25, y: 29}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 25}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 26}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 27}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 26, y: 28}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 29}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 27, y: 25}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 27, y: 26}
+    Rotation: 90
+  - RoomShape: 300
+    Coordinates: {x: 29, y: 0}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 27, y: 28}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 27, y: 29}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 27, y: 27}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 28, y: 25}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 28, y: 26}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 28, y: 28}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 28, y: 29}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 28, y: 27}
+    Rotation: 90
+  - RoomShape: 300
+    Coordinates: {x: 29, y: 25}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 29, y: 26}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 29, y: 27}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 29, y: 28}
+    Rotation: 270
+  - RoomShape: 300
+    Coordinates: {x: 29, y: 29}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 4, y: 25}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 25}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 4, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 2, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 1, y: 25}
+    Rotation: 180
+  - RoomShape: 300
+    Coordinates: {x: 0, y: 25}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 4, y: 26}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 26}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 2, y: 26}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 1, y: 26}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 0, y: 26}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 27}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 27}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 1, y: 27}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 0, y: 27}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 2, y: 27}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 28}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 28}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 1, y: 28}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 0, y: 28}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 2, y: 28}
+    Rotation: 180
+  - RoomShape: 300
+    Coordinates: {x: 4, y: 29}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 29}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 2, y: 29}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 1, y: 29}
+    Rotation: 0
+  - RoomShape: 300
+    Coordinates: {x: 0, y: 29}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 4, y: 4}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 4, y: 3}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 4, y: 4}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 2}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 1}
+    Rotation: 270
+  - RoomShape: 300
+    Coordinates: {x: 4, y: 0}
+    Rotation: 90
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 4}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 3}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 2}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 3, y: 1}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 0}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 2, y: 4}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 2, y: 3}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 2, y: 1}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 2, y: 0}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 2, y: 2}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 1, y: 4}
+    Rotation: 0
+  - RoomShape: 600
+    Coordinates: {x: 1, y: 3}
+    Rotation: 270
+  - RoomShape: 600
+    Coordinates: {x: 1, y: 1}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 1, y: 0}
+    Rotation: 180
+  - RoomShape: 600
+    Coordinates: {x: 1, y: 2}
+    Rotation: 270
+  - RoomShape: 300
+    Coordinates: {x: 0, y: 4}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 0, y: 3}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 0, y: 2}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 0, y: 1}
+    Rotation: 90
+  - RoomShape: 300
+    Coordinates: {x: 0, y: 0}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 5}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 6}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 7}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 8}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 9}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 6}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 8}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 5}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 7}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 9}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 10}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 11}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 12}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 13}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 14}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 11}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 13}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 10}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 12}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 14}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 15}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 16}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 17}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 18}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 19}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 16}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 18}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 15}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 17}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 19}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 20}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 21}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 22}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 23}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 6, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 25, y: 24}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 21}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 23}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 20}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 22}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 26, y: 24}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 10}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 11}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 12}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 13}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 14}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 11}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 13}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 10}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 12}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 14}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 20}
+    Rotation: 90
+  - RoomShape: 300
+    Coordinates: {x: 16, y: 25}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 21}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 5, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 22}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 23}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 23}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 8}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 20}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 9}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 6}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 8}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 22}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 7}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 6}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 9}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 7}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 15}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 16}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 17}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 18}
+    Rotation: 90
+  - RoomShape: 300
+    Coordinates: {x: 16, y: 26}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 19}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 18, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 16}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 5}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 18}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 15}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 9, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 21}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 19}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 19, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 18, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 17, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 5}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 8, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 3, y: 24}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 6, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 24}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 19, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 7, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 5, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 24, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 9, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 8, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 4, y: 17}
+    Rotation: 270
+  - RoomShape: 500
+    Coordinates: {x: 23, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 17, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 7, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 24, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 23, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 22, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 21, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 20, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 20, y: 26}
+    Rotation: 0
+  - RoomShape: 300
+    Coordinates: {x: 13, y: 25}
+    Rotation: 90
+  - RoomShape: 500
+    Coordinates: {x: 8, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 12, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 11, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 22, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 11, y: 26}
+    Rotation: 0
+  - RoomShape: 300
+    Coordinates: {x: 13, y: 26}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 12, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 10, y: 25}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 10, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 19, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 18, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 17, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 16, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 15, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 21, y: 26}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 18, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 16, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 6, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 7, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 17, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 15, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 8, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 6, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 9, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 7, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 9, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 5, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 19, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 5, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 24, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 13, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 23, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 22, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 21, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 20, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 14, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 23, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 21, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 24, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 12, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 22, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 11, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 20, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 13, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 11, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 10, y: 3}
+    Rotation: 180
+  - RoomShape: 500
+    Coordinates: {x: 14, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 12, y: 4}
+    Rotation: 0
+  - RoomShape: 500
+    Coordinates: {x: 10, y: 4}
+    Rotation: 0

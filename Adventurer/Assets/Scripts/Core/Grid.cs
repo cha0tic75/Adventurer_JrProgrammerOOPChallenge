@@ -18,7 +18,7 @@ namespace Project
 		[SerializeField, ReadOnly] private int m_gridWidth;
 		[SerializeField, ReadOnly] private int m_gridHeight;
 		[SerializeField, ReadOnly] private float m_cellSize;
-		[SerializeField, ReadOnly] private Vector2 m_gridOrigin = Vector2.zero;
+		[SerializeField, ReadOnly] private Vector3 m_gridOrigin = Vector2.zero;
 		#endregion
 
 		#region Internal State Field(s):
@@ -34,19 +34,20 @@ namespace Project
 		#endregion
 
 		#region Constructor(s):
-		public Grid(int _gridWidth, int _gridheight, float _gridSize, bool _useDebug = false)
+		public Grid(int _gridWidth, int _gridheight, float _gridSize, Vector3 _gridOrigin, bool _useDebug = false)
 		{
 			m_gridWidth = _gridWidth;
 			m_gridHeight = _gridheight;
 			m_cellSize = _gridSize;
+			m_gridOrigin = _gridOrigin;
 			m_useDebug = _useDebug;
 
 			InitializeGrid();
-		}
 
-		public Grid(int _gridWidth, int _gridheight, float _gridSize, Vector2 m_gridOrigin, bool _useDebug = false) : this(_gridWidth, _gridheight, _gridSize, _useDebug)
-		{
-			this.m_gridOrigin = m_gridOrigin;
+			if (m_useDebug)
+			{
+				DrawDebugLines();
+			}
 		}
 		#endregion
 		
@@ -56,21 +57,19 @@ namespace Project
 		// Getter(s):
 		public T GetItemAt(int _x, int _y) => (IsCoordInGridBounds(_x, _y)) ? m_grid[_x, _y] : default(T);
 		public T GetItemAt(Vector2Int _coords) => GetItemAt(_coords.x, _coords.y);
-		public T GetItemAt(Vector2 _worldPosition)
+		public T GetItemAt(Vector3 _worldPosition)
 		{
-			Vector2Int worldPosition = GetWorldPosition(_worldPosition);
+			Vector2Int worldPosition = GetXY(_worldPosition);
 
 			return GetItemAt(worldPosition.x, worldPosition.y);
 		}
-
-		public Vector2 GetWorldPosition(int _x, int _y) => new Vector2(_x, _y) * m_cellSize + m_gridOrigin;
 
 		// Setter(s):
 		public void SetItemAt(int _x, int _y, T _item) => m_grid[_x, _y] =  IsCoordInGridBounds(_x, _y) ? _item : default(T);
 		public void SetItemAt(Vector2Int _coords, T _item) => SetItemAt(_coords.x, _coords.y, _item);
 		public void SetElementAt(Vector2 _worldPosition, T _item)
 		{
-			Vector2Int worldPosition = GetWorldPosition(_worldPosition);
+			Vector2Int worldPosition = GetXY(_worldPosition);
 
 			SetItemAt(worldPosition.x, worldPosition.y, _item);
 		}
@@ -86,28 +85,32 @@ namespace Project
 				for (int y = 0; y < m_gridWidth; y++)
 				{
 					m_grid[x, y] = default(T);
-
-					if (m_useDebug)
-					{
-						Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y + 1), Color.red, 50f);
-						Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x + 1, y), Color.red, 50f);
-					}
 				}
-			}
-
-			if (m_useDebug)
-			{
-					Debug.DrawLine(GetWorldPosition(0, m_gridHeight), GetWorldPosition(m_gridWidth, m_gridHeight), Color.red, 50f);
-					Debug.DrawLine(GetWorldPosition(m_gridWidth, 0), GetWorldPosition(m_gridWidth, m_gridHeight), Color.red, 50f);
 			}
 		}
 
-		private Vector2Int GetWorldPosition(Vector2 _worldPosition)
+		private void DrawDebugLines()
+		{
+			Debug.DrawLine(GetWorldPosition(0, m_gridHeight), GetWorldPosition(m_gridWidth, m_gridHeight), Color.red, 50f);
+			Debug.DrawLine(GetWorldPosition(m_gridWidth, 0), GetWorldPosition(m_gridWidth, m_gridHeight), Color.red, 50f);
+			for (int x = 0; x < m_gridWidth; x++)
+			{
+				for (int y = 0; y < m_gridWidth; y++)
+				{
+					Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y + 1), Color.red, 50f);
+					Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x + 1, y), Color.red, 50f);
+				}
+			}
+		}
+
+		private Vector3 GetWorldPosition(int _x, int _y) => new Vector3(_x, _y) * m_cellSize + m_gridOrigin;
+		public Vector2Int GetXY(Vector3 _worldPosition)
 		{
 			int x = Mathf.FloorToInt((_worldPosition + m_gridOrigin).x / m_cellSize);
 			int y = Mathf.FloorToInt((_worldPosition + m_gridOrigin).y / m_cellSize);
 
 			return new Vector2Int(x, y);
+
 		}
 		#endregion
 	}

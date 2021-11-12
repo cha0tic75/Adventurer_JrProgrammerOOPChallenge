@@ -30,9 +30,6 @@ namespace Project.Tools
 				Vector2 position = roomTransform.position / m_cellSize;
 
 				Vector2Int coordinates = new Vector2Int((int)position.x, (int)position.y);
-				// int rotation = (int)(room.transform.rotation.z / 90f);
-
-				// if (rotation == -1) { rotation = 3; }
 
 				RoomShape roomShape = room.RoomShape;
 

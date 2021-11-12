@@ -16,6 +16,7 @@ namespace Project.Tools
 	{
 		#region Inspector Assigned Field(s):
 		[SerializeField] private MapCaptureData m_mapCaptureData;
+		[SerializeField] private Vector3 m_offset;
 		[SerializeField] private List<Room> m_roomPrefabs;
 		#endregion
 		
@@ -38,7 +39,7 @@ namespace Project.Tools
 			foreach(var roomData in m_mapCaptureData.RoomData)
 			{
 				Vector2Int coords = roomData.Coordinates;
-				Vector2 position = new Vector2(coords.x, coords.y) * cellSize;
+				Vector2 position = m_offset + new Vector3(coords.x, coords.y) * cellSize;
 
 				Room roomPrefab = m_roomPrefabs.Find(r => r.RoomShape == roomData.RoomShape);
 

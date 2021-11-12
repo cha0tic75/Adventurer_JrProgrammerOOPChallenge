@@ -1,6 +1,8 @@
 TODO:
-11/10/21 -
-	- Add a concept of Health
+11/12/21 -
+	- Fix grid.  It appears to be off when debugging for the pathfinder script
+	  I can't proceed with enemies until I have pathfinding finished
+
 	- Add some enemies
 	- Add some interactables: Doors, Traps, Etc
 	- Add Concept of items

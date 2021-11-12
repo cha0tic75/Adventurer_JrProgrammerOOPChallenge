@@ -29,7 +29,7 @@ namespace Project.Game.Entities.Actors
 
 		private void FixedUpdate()
 		{
-            m_rigidbody2D.velocity = m_movementInput * Speed * Time.fixedDeltaTime;
+            m_rigidbody2D.velocity = m_movementInput.normalized * Speed * Time.fixedDeltaTime;
 		}
 		#endregion
 	}
