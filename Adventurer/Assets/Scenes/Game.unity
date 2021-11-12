@@ -29217,11 +29217,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9fd54adcef2a60489e34c6dbd79e1b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_width: 30
-  m_height: 30
-  m_cellSize: 10
+  m_width: 300
+  m_height: 300
+  m_cellSize: 1
   m_origin: {x: 0, y: 0, z: 0}
-  m_targetTransform: {fileID: 4804640580887960856}
+  m_colliderLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  m_debug: 1
 --- !u!1001 &1729641765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33442,7 +33445,10 @@ MonoBehaviour:
   m_height: 300
   m_cellSize: 1
   m_origin: {x: 0, y: 0, z: 0}
-  m_targetTransform: {fileID: 0}
+  m_colliderLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  m_debug: 0
 --- !u!114 &1999823629
 MonoBehaviour:
   m_ObjectHideFlags: 0
