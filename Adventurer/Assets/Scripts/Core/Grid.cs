@@ -34,7 +34,7 @@ namespace Project
 		#region Properties:
 		public int GridWidth => m_gridWidth;
 		public int GridHeight => m_gridHeight;
-		public float GridSize => m_cellSize;
+		public float CellSize => m_cellSize;
 		public int CellCount =>  (m_grid != null) ? m_grid.GetLength(0) + m_grid.GetLength(1) : 0;
 		private bool m_useDebug = false;
 		public T[,] GridContents => m_grid;

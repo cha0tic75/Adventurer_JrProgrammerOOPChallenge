@@ -8,41 +8,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Project.Game.PathFinder
+namespace Project.Game.AIPathFinding
 {
-    public class PathNode
-	{
-		#region Public Field(s):
-		public int gCost;
-		public int hCost;
-		public int fCost;
-		public PathNode cameFromNode;
-		public bool isWalkable;
-		#endregion
-
-		#region Internal State Field(s):
-		private Grid<PathNode> m_grid;
-		public int x { get; private set;}
-		public int y { get; private set;}
-		#endregion
-
-		#region Constructor(s):
-		public PathNode(Grid<PathNode> _grid, int _x, int _y)
-		{
-			m_grid = _grid;
-			x = _x;
-			y = _y;
-			isWalkable = true;
-		}
-		#endregion
-
-		#region Public API:
-		public override string ToString() => $"{x}, {y}";
-		public void CalculateFCost() => fCost = gCost + hCost;
-		#endregion
-	}
-
-	public class PathFinding
+    public class PathFinding
 	{
 		#region Constant(s):
 		private const int MOVE_STRAIGHT_COST = 10;
@@ -148,6 +116,22 @@ namespace Project.Game.PathFinder
 			return null;
 		}
 
+		public List<Vector3> FindPath(Vector3 _startPosition, Vector3 _endPosition)
+		{
+			Vector2Int startCoord = PathfindingGrid.GetXY(_startPosition);
+			Vector2Int endCooord = PathfindingGrid.GetXY(_endPosition);
+
+			List<PathNode> pathNodes = FindPath(startCoord, endCooord);
+			if (pathNodes == null) { return null; }
+
+			List<Vector3> returnList = new List<Vector3>();
+			foreach(var node in pathNodes)
+			{
+				returnList.Add(new Vector3(node.x, node.y) * PathfindingGrid.CellSize + Vector3.one * PathfindingGrid.CellSize * 0.5f);
+			}
+
+			return returnList;
+		}
 		#endregion
 
 		#region Internally Used Method(s):

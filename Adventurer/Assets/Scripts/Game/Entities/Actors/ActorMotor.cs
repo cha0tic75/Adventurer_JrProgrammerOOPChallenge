@@ -13,11 +13,11 @@ namespace Project.Game.Entities.Actors
 	{
 		#region Inspector Assigned Field(s):
 		[SerializeField] protected float m_movementSpeed;
+		[SerializeField] protected Vector2 m_movementInput;
 		#endregion
 
 		#region Internal State Field(s):
-		private Rigidbody2D m_rigidbody2D;
-		protected Vector2 m_movementInput;
+		protected Rigidbody2D m_rigidbody2D;
 		#endregion
 		
 		#region Properties:
@@ -26,11 +26,7 @@ namespace Project.Game.Entities.Actors
 
 		#region MonoBehaviour Callback Method(s):
 		protected virtual void Awake() => m_rigidbody2D = GetComponent<Rigidbody2D>();
-
-		private void FixedUpdate()
-		{
-            m_rigidbody2D.velocity = m_movementInput.normalized * Speed * Time.fixedDeltaTime;
-		}
+		protected virtual void FixedUpdate() => m_rigidbody2D.velocity = m_movementInput.normalized * Speed * Time.fixedDeltaTime;
 		#endregion
 	}
 }

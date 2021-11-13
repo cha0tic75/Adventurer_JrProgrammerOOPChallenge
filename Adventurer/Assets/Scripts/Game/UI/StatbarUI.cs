@@ -48,7 +48,6 @@ namespace Project.Game.UI
 		{
 			float percentage = Mathf.Clamp01((float)_stat.Currentvalue / _stat.Threshold.Max);
 			m_fillRectTransform.localScale = new Vector3(percentage, 1f, 1f);
-			Debug.Log($"Percentage: {percentage}");
 		}
 		#endregion
 	}
