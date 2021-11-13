@@ -27,7 +27,8 @@ namespace Project.Game.Entities.Actors.Enemies
 		#region Internally Used Method(s):
 		private void Update()
 		{
-			if (m_targetManager == null || !m_targetManager.HasPathData) { return; }
+			m_movementInput = Vector2.zero;
+			if (m_targetManager == null || !m_targetManager.HasPathData){ return; }
 
 			Vector3 targetPosition = m_targetManager.GetCurrentTarget();
 

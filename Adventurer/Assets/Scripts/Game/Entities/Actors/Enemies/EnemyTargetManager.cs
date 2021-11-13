@@ -33,6 +33,8 @@ namespace Project.Game.Entities.Actors.Enemies
 		{
 			m_movementPathList = PathFinder.Instance.Grid.FindPath(transform.position, _targetPos);
 			m_currentPathIndex = 1;
+
+			StartCoroutine(ShowPathCoroutine());
 		}
 
 		public Vector3 GetCurrentTarget()
@@ -68,6 +70,15 @@ namespace Project.Game.Entities.Actors.Enemies
 		{
 			yield return new WaitForSeconds(1f);
 			SetTarget(GameObject.FindWithTag("Player").transform);
+		}
+
+		private IEnumerator ShowPathCoroutine()
+		{
+			for (int i = 0; i < m_movementPathList.Count - 1; i++)
+			{
+				Debug.DrawLine(m_movementPathList[i], m_movementPathList[i + 1], Color.green, 100f);
+				yield return new WaitForSeconds(0.1f);
+			}
 		}
 		#endregion
 	}
