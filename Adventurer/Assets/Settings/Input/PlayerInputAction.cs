@@ -51,6 +51,14 @@ namespace Project.Input
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press(behavior=2)""
+                },
+                {
+                    ""name"": ""MouseClick"",
+                    ""type"": ""Value"",
+                    ""id"": ""e39e19c9-1ce2-46fa-963d-40bee231a8bc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=2)""
                 }
             ],
             ""bindings"": [
@@ -229,6 +237,17 @@ namespace Project.Input
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a9304762-c803-446d-bde2-57df029674c8"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KBM"",
+                    ""action"": ""MouseClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -279,6 +298,7 @@ namespace Project.Input
             m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
             m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
             m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
+            m_Player_MouseClick = m_Player.FindAction("MouseClick", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -332,6 +352,7 @@ namespace Project.Input
         private readonly InputAction m_Player_Sprint;
         private readonly InputAction m_Player_Interact;
         private readonly InputAction m_Player_Attack;
+        private readonly InputAction m_Player_MouseClick;
         public struct PlayerActions
         {
             private @PlayerInputAction m_Wrapper;
@@ -340,6 +361,7 @@ namespace Project.Input
             public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
             public InputAction @Interact => m_Wrapper.m_Player_Interact;
             public InputAction @Attack => m_Wrapper.m_Player_Attack;
+            public InputAction @MouseClick => m_Wrapper.m_Player_MouseClick;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -361,6 +383,9 @@ namespace Project.Input
                     @Attack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
                     @Attack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
                     @Attack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
+                    @MouseClick.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseClick;
+                    @MouseClick.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseClick;
+                    @MouseClick.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseClick;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -377,6 +402,9 @@ namespace Project.Input
                     @Attack.started += instance.OnAttack;
                     @Attack.performed += instance.OnAttack;
                     @Attack.canceled += instance.OnAttack;
+                    @MouseClick.started += instance.OnMouseClick;
+                    @MouseClick.performed += instance.OnMouseClick;
+                    @MouseClick.canceled += instance.OnMouseClick;
                 }
             }
         }
@@ -405,6 +433,7 @@ namespace Project.Input
             void OnSprint(InputAction.CallbackContext context);
             void OnInteract(InputAction.CallbackContext context);
             void OnAttack(InputAction.CallbackContext context);
+            void OnMouseClick(InputAction.CallbackContext context);
         }
     }
 }

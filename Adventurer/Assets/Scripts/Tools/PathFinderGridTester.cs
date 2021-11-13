@@ -1,16 +1,15 @@
 // ######################################################################
-// PathFinder - Script description goes here
+// PathFinderGridTester - Script description goes here
 //
 // Written by Tim McCune <tim.mccune1975@gmail.com>
 // ######################################################################
 
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 namespace Project.Game
 {
-	public class PathFinder : MonoBehaviour
+	public class PathFinderGridTester : MonoBehaviour
 	{
 		#region Inspector Assigned Field(s):
 		[SerializeField] private int m_width;
@@ -25,10 +24,6 @@ namespace Project.Game
 		#region Internal State Field(s):
 		private Grid<bool> m_grid;
 		#endregion
-		
-		#region Properties:
-		
-		#endregion
 
 		#region MonoBehaviour Callback Method(s):
 		private void Start()
@@ -40,32 +35,32 @@ namespace Project.Game
 		{
 			if (!m_debugGizmos || m_grid == null) { return; }
 
-			Vector3 cellSize = new Vector3(m_cellSize, m_cellSize);
-			Vector3 halfCellSize = cellSize * 0.5f;
-			for (int x = 0; x < m_grid.GridWidth; x++)
+			try
 			{
-				for (int y = 0; y < m_grid.GridHeight; y++)
+				Vector3 cellSize = new Vector3(m_cellSize, m_cellSize);
+				Vector3 halfCellSize = cellSize * 0.5f;
+				for (int x = 0; x < m_grid.GridWidth; x++)
 				{
-					bool result = m_grid.GetItemAt(x, y);
-					Gizmos.color = (result) ? Color.green : Color.red;
+					for (int y = 0; y < m_grid.GridHeight; y++)
+					{
+						bool result = m_grid.GetGridObjectAt(x, y);
+						Gizmos.color = (result) ? Color.green : Color.red;
 
-					Vector3 position = m_grid.GetWorldPosition(x, y);
-					position += halfCellSize;
+						Vector3 position = m_grid.GetWorldPosition(x, y);
+						position += halfCellSize;
 
-					Gizmos.DrawCube(position, cellSize);
+						Gizmos.DrawCube(position, cellSize);
+					}
 				}
 			}
+			catch(Exception e) { }
 		}
-		#endregion
-		
-		#region Public API:
-		
 		#endregion
 
 		#region Internally Used Method(s):
 		public void BuildGrid()
 		{
-			m_grid = new Grid<bool>(m_width, m_height, m_cellSize, transform.position + m_origin, m_debugGridLines);
+			m_grid = new Grid<bool>(m_width, m_height, m_cellSize, transform.position + m_origin, (Grid<bool> _g, int _x, int _y) => false, m_debugGridLines);
 			
 			for (int x = 0; x < m_grid.GridWidth; x++)
 			{
@@ -85,7 +80,7 @@ namespace Project.Game
 					Color debugColor = (result) ? Color.red : Color.green;
 					m_grid.DebugCell(x, y, 0.05f, debugColor);
 
-					m_grid.SetItemAt(x, y, !result);
+					m_grid.SetGridObjectAt(x, y, !result);
 				}
 			}
 		}

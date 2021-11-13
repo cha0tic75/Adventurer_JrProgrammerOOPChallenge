@@ -13,14 +13,14 @@ using UnityEditor;
 namespace Project.Tools
 {
 #if UNITY_EDITOR
-    [CustomEditor(typeof(PathFinder))]
-	public class PathFinderEditor : Editor
+    [CustomEditor(typeof(PathFinderGridTester))]
+	public class PathFinderGridTesterEditor : Editor
 	{
 		public override void OnInspectorGUI()
 		{
 			DrawDefaultInspector();
 
-			PathFinder myScript = (PathFinder)target;
+			PathFinderGridTester myScript = (PathFinderGridTester)target;
 			if(GUILayout.Button("Build Grid"))
 			{
 				myScript.BuildGrid();

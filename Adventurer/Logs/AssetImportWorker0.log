@@ -1086,3 +1086,367 @@ Total: 1.789600 ms (FindLiveObjects: 0.183800 ms CreateObjectMapping: 0.082900 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   requireTextureImportCompression: false -> true
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001076 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.795 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2135 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.9 MB.
+System memory in use after: 101.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2711.
+Total: 2.154200 ms (FindLiveObjects: 0.325700 ms CreateObjectMapping: 0.098000 ms MarkObjects: 1.592300 ms  DeleteObjects: 0.137300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Import Request.
+  Time since last request: 1378.227331 seconds.
+  path: Assets/Scripts/Game/Pathfinding/PathFinder.cs
+  artifactKey: Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/Pathfinding/PathFinder.cs using Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0323b99d6c5f981adea2534c539a467') in 0.007174 seconds
+  Import took 0.010136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016796 seconds.
+  path: Assets/Scripts/Game/Pathfinding/PathFinder.cs
+  artifactKey: Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/Pathfinding/PathFinder.cs using Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0323b99d6c5f981adea2534c539a467') in 0.003558 seconds
+  Import took 0.006507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.691217 seconds.
+  path: Assets/Scripts/Game/Pathfinding/PathFinderGridTester.cs
+  artifactKey: Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/Pathfinding/PathFinderGridTester.cs using Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2795beed8afb7398e2df344f893b3d6') in 0.004169 seconds
+  Import took 0.007474 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000665 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2135 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.9 MB.
+System memory in use after: 101.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2715.
+Total: 1.968000 ms (FindLiveObjects: 0.211100 ms CreateObjectMapping: 0.090200 ms MarkObjects: 1.572300 ms  DeleteObjects: 0.093400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Import Request.
+  Time since last request: 4.741666 seconds.
+  path: Assets/Scripts/Tools/Editor/PathFinderEditor.cs
+  artifactKey: Guid(25a207dd3c3f9c44c8bd81faa4292b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/Editor/PathFinderEditor.cs using Guid(25a207dd3c3f9c44c8bd81faa4292b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '854785db5c0766b9cf9b0e9c8b46c94d') in 0.006851 seconds
+  Import took 0.009955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.710691 seconds.
+  path: Assets/Scripts/Tools/Editor/PathFinderGridTesterEditor.cs
+  artifactKey: Guid(25a207dd3c3f9c44c8bd81faa4292b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/Editor/PathFinderGridTesterEditor.cs using Guid(25a207dd3c3f9c44c8bd81faa4292b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '589afa4ddc1fcde8539538a834b0b322') in 0.006349 seconds
+  Import took 0.009515 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000684 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.769 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2135 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.0 MB.
+System memory in use after: 102.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2719.
+Total: 2.003500 ms (FindLiveObjects: 0.220900 ms CreateObjectMapping: 0.080700 ms MarkObjects: 1.611700 ms  DeleteObjects: 0.089100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000693 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2135 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.0 MB.
+System memory in use after: 102.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2723.
+Total: 3.159300 ms (FindLiveObjects: 0.433300 ms CreateObjectMapping: 0.289800 ms MarkObjects: 2.333800 ms  DeleteObjects: 0.101400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000669 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.786 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2135 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.0 MB.
+System memory in use after: 102.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2727.
+Total: 2.119400 ms (FindLiveObjects: 0.235200 ms CreateObjectMapping: 0.092500 ms MarkObjects: 1.700300 ms  DeleteObjects: 0.090800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000818 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.937 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2135 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.0 MB.
+System memory in use after: 102.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2731.
+Total: 1.867700 ms (FindLiveObjects: 0.214300 ms CreateObjectMapping: 0.078200 ms MarkObjects: 1.468800 ms  DeleteObjects: 0.105500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Import Request.
+  Time since last request: 356.352916 seconds.
+  path: Assets/Textures/Square.png
+  artifactKey: Guid(3f21e14031196ff419ad1b483aa78188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Square.png using Guid(3f21e14031196ff419ad1b483aa78188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c46248c74495cf6ac34e29ed208f65') in 0.052744 seconds
+  Import took 0.056682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 545.377186 seconds.
+  path: Assets/Scripts/Game/Pathfinding/PathFinding.cs
+  artifactKey: Guid(f797141b4ed7260408fd0ec63275a212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/Pathfinding/PathFinding.cs using Guid(f797141b4ed7260408fd0ec63275a212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f82412565c951847788880d0ed8f8a1') in 0.003663 seconds
+  Import took 0.007712 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000760 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.815 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.0 MB.
+System memory in use after: 102.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2740.
+Total: 1.977500 ms (FindLiveObjects: 0.228300 ms CreateObjectMapping: 0.090900 ms MarkObjects: 1.560000 ms  DeleteObjects: 0.097200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.786 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 102.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2744.
+Total: 1.942000 ms (FindLiveObjects: 0.237000 ms CreateObjectMapping: 0.099800 ms MarkObjects: 1.505300 ms  DeleteObjects: 0.098400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000790 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 102.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2748.
+Total: 2.072200 ms (FindLiveObjects: 0.230900 ms CreateObjectMapping: 0.103400 ms MarkObjects: 1.641000 ms  DeleteObjects: 0.096100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000824 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 102.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2752.
+Total: 2.256600 ms (FindLiveObjects: 0.418600 ms CreateObjectMapping: 0.111300 ms MarkObjects: 1.597100 ms  DeleteObjects: 0.129000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Import Request.
+  Time since last request: 334.367837 seconds.
+  path: Assets/Scripts/Game/Pathfinding/PathFinding.cs
+  artifactKey: Guid(f797141b4ed7260408fd0ec63275a212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Game/Pathfinding/PathFinding.cs using Guid(f797141b4ed7260408fd0ec63275a212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a56b6753f85b5106f7383fcf218d458') in 0.006814 seconds
+  Import took 0.009459 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000897 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.792 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 102.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2756.
+Total: 2.118500 ms (FindLiveObjects: 0.221500 ms CreateObjectMapping: 0.078200 ms MarkObjects: 1.682000 ms  DeleteObjects: 0.135900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Import Request.
+  Time since last request: 116.359797 seconds.
+  path: Assets/Scripts/Tools/PathFinderGridTester.cs
+  artifactKey: Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/PathFinderGridTester.cs using Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a463db04da563d066f12f0edb1514c') in 0.006510 seconds
+  Import took 0.009567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021805 seconds.
+  path: Assets/Scripts/Tools/PathFinderGridTester.cs
+  artifactKey: Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/PathFinderGridTester.cs using Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a463db04da563d066f12f0edb1514c') in 0.003258 seconds
+  Import took 0.006449 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000757 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.765 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 102.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2760.
+Total: 1.929000 ms (FindLiveObjects: 0.239200 ms CreateObjectMapping: 0.103200 ms MarkObjects: 1.489800 ms  DeleteObjects: 0.095400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+========================================================================
+Received Import Request.
+  Time since last request: 31.043255 seconds.
+  path: Assets/Scripts/Tools/PathFinderGridTester.cs
+  artifactKey: Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/PathFinderGridTester.cs using Guid(c9fd54adcef2a60489e34c6dbd79e1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856b4045cf73103f6578200cd2769f48') in 0.005398 seconds
+  Import took 0.008702 seconds .
+
