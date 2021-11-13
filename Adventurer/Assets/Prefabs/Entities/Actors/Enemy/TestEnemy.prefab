@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1945253408854470357, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945253408854470357, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2360345920814381348, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2360345920814381349, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}
       propertyPath: m_Name
-      value: BaseEnemy
+      value: TestEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}

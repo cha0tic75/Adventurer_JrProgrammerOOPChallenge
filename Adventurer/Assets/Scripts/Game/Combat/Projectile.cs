@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Project.Game.Combat
 {
-	public class Projectile : ColliderSensorObject, IDamageDealer
+	public class Projectile : CollisionHandler, IDamageDealer
 	{
         #region Inspector Assigned Field(s):
 		[SerializeField] private int m_damage = 10;
@@ -20,7 +20,7 @@ namespace Project.Game.Combat
         #endregion
 
 		#region Internally Used Method(s):
-		protected override void HandleCollision(Collision2D _collision)
+		protected override void HandleCollisionEnter(Collision2D _collision)
         {
             if(_collision.gameObject.TryGetComponent<HealthStat>(out var health))
 			{
