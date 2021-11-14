@@ -4,13 +4,14 @@
 // Written by Tim McCune <tim.mccune1975@gmail.com>
 // ######################################################################
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Project.Game.Entities.Actors.Enemies
 {
-	public abstract class BaseEnemyStateMachine : MonoBehaviour
+    public abstract class BaseEnemyStateMachine : MonoBehaviour
 	{
 		#region Inspector Assigned Field(s):
 		[SerializeField] private EnemyAggroTrigger m_aggroTriger;
@@ -18,7 +19,7 @@ namespace Project.Game.Entities.Actors.Enemies
 		#endregion
 
 		#region Internal State Field(s):
-		private StateMachine m_stateMachine;
+		protected StateMachine m_stateMachine;
 		#endregion
 
 		#region MonoBehaviour Callback Method(s):
@@ -43,6 +44,16 @@ namespace Project.Game.Entities.Actors.Enemies
 
 		#region Internally Used Method(s):
 		protected abstract void ConfigureStateMachine();
+
+		protected void AddTransition(IState _fromState, IState _toState, Func<bool> _predicate)
+		{
+			m_stateMachine?.AddTransition(_fromState, _toState, _predicate);
+		}
+
+		protected void AddAnyTransition(IState _toState, Func<bool> _predicate)
+		{
+			m_stateMachine?.AddAnyTransition(_toState, _predicate);
+		}
 		#endregion
 	}
 }
