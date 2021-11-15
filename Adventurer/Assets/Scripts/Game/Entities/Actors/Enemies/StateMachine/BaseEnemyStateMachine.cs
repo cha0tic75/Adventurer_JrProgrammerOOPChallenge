@@ -14,8 +14,8 @@ namespace Project.Game.Entities.Actors.Enemies
     public abstract class BaseEnemyStateMachine : MonoBehaviour
 	{
 		#region Inspector Assigned Field(s):
-		[SerializeField] private EnemyAggroTrigger m_aggroTriger;
-		[SerializeField] private EnemyTargetManager m_targetManager;
+		[SerializeField] protected EnemyAggroTrigger m_aggroTriger;
+		[SerializeField] protected EnemyTargetManager m_targetManager;
 		#endregion
 
 		#region Internal State Field(s):
@@ -29,15 +29,9 @@ namespace Project.Game.Entities.Actors.Enemies
 			ConfigureStateMachine();
 		}
 
-		protected virtual void OnEnable()
-		{
+		protected virtual void OnEnable() { }
 
-		}
-
-		protected virtual void OnDisable()
-		{
-
-		}
+		protected virtual void OnDisable() { }
 
 		private void Update() => m_stateMachine.Tick();
 		#endregion

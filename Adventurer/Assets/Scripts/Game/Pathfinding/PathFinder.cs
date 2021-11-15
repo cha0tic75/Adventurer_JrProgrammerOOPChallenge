@@ -47,7 +47,7 @@ namespace Project.Game.AIPathFinding
 					float halfCellSize = m_cellSize * 0.5f;
 					position += new Vector3(halfCellSize, halfCellSize);
 
-					bool result = Physics2D.OverlapPoint(position, m_colliderLayer);
+					bool result = Physics2D.OverlapCircle(position, halfCellSize, m_colliderLayer);
 
 					m_grid.PathfindingGrid.GetGridObjectAt(x, y).isWalkable = !result;
 				}

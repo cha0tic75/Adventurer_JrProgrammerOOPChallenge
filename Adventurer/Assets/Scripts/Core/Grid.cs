@@ -105,7 +105,14 @@ namespace Project
 			int x = Mathf.FloorToInt((_worldPosition + m_gridOrigin).x / m_cellSize);
 			int y = Mathf.FloorToInt((_worldPosition + m_gridOrigin).y / m_cellSize);
 
-			return new Vector2Int(x, y);
+			Vector2Int gridCoords = new Vector2Int(x, y);
+
+			if (!IsCoordInGridBounds(gridCoords))
+			{
+				Debug.LogError($"WorldPosition: {_worldPosition} is out of bounds and returned coords: {gridCoords}");
+			}
+
+			return gridCoords;
 
 		}
 		#endregion

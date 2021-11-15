@@ -10,10 +10,15 @@ namespace Project.Game.Entities.Actors.Enemies
 {
     public class EnemyAggroTrigger : TriggerHandler
     {
-        public EnemyTargetManager m_enemyTargetManager;
+        #region Inspector Assigned Field(s):
+        [SerializeField] private EnemyTargetManager m_enemyTargetManager;
+        #endregion
+
+        #region Internally Used Method(s):
         protected override void HandleTriggerEnter(Collider2D _collider)
         {
-            m_enemyTargetManager.SetTarget(_collider.transform, TargetType.Enemy);
+            m_enemyTargetManager?.SetTarget(_collider.transform, TargetType.Enemy);
         }
+        #endregion
     }
 }

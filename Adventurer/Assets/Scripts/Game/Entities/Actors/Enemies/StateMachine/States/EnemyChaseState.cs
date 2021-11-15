@@ -8,8 +8,17 @@ namespace Project.Game.Entities.Actors.Enemies
 {
     public class EnemyChaseState : BaseEnemyState
     {
+        #region Internal State Field(s):
+        private EnemyTargetManager m_targetManager;
+        private EnemyAggroTrigger m_aggroTrigger;
+        #endregion
+
         #region Constructor(s):
-        public EnemyChaseState() : base() { }
+        public EnemyChaseState(EnemyTargetManager _targetManager, EnemyAggroTrigger _aggroTrigger) : base()
+        {
+            m_targetManager = _targetManager;
+            m_aggroTrigger = _aggroTrigger;
+        }
         #endregion
 
         #region Public API:

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &8232568178002788930
+--- !u!114 &6051749807632425418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,7 +28,7 @@ MonoBehaviour:
   m_aggroTriger: {fileID: 558980191509770184}
   m_targetManager: {fileID: 8019808865512231328}
   m_idleTimeoutTime: 3
-  m_patrolManager: {fileID: 2409940375764624885}
+  m_patrolManager: {fileID: 6051749807632425418}
 --- !u!1001 &7049581965788676836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ PrefabInstance:
     - target: {fileID: 7355716259880561964, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}
       propertyPath: m_enemyTargetManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8019808865512231328}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}
 --- !u!1 &4689521998802156481 stripped
@@ -112,17 +112,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3847e86a3bb67064b8f59e40c8d6c63d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2409940375764624885 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4658113387854030609, guid: 4a0bc12fa56a6a0499d81d02a5301426, type: 3}
-  m_PrefabInstance: {fileID: 7049581965788676836}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4689521998802156481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df8641bd1bd77674f8bbedbc8d47f043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &558980191509770184 stripped

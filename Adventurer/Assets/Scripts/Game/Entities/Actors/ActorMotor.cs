@@ -26,7 +26,14 @@ namespace Project.Game.Entities.Actors
 
 		#region MonoBehaviour Callback Method(s):
 		protected virtual void Awake() => m_rigidbody2D = GetComponent<Rigidbody2D>();
-		protected virtual void FixedUpdate() => m_rigidbody2D.velocity = m_movementInput.normalized * Speed * Time.fixedDeltaTime;
+		protected virtual void FixedUpdate()
+		{
+			// if (m_movementInput.IsNaN()) { return; }
+	
+			Vector2 velocity = m_movementInput.normalized * Speed * Time.fixedDeltaTime;
+
+			m_rigidbody2D.velocity = (velocity.IsNaN()) ? Vector2.zero : velocity;
+		}
 		#endregion
 	}
 }

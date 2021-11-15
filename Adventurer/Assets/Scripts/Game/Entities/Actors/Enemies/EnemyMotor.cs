@@ -25,25 +25,24 @@ namespace Project.Game.Entities.Actors.Enemies
 		#endregion
 
 		#region Internally Used Method(s):
-		private void Update()
+		protected override void FixedUpdate()
 		{
-			m_movementInput = Vector2.zero;
-			if (m_targetManager == null || !m_targetManager.HasPathData){ return; }
+			// m_movementInput = Vector2.zero;
 
-			Vector3 targetPosition = m_targetManager.GetCurrentTarget();
+			if (m_targetManager == null || !m_targetManager.HasPoints){ return; }
 
-			if (targetPosition == Vector3.negativeInfinity) { return; }
+			Vector3 targetPosition = m_targetManager.GetCurrentPoint(transform.position, m_stoppingDistance);
 
-			// Debug.Log(Vector2.Distance(transform.position, targetPosition));
-
-			if (Vector2.Distance(transform.position, targetPosition) < m_stoppingDistance)
+			if (targetPosition == EnemyTargetManager.NO_POINT)
 			{
-				m_targetManager.GetNextPathIndex();
-	
-				return;
+				Debug.Log("targetPos has no point!"); 
+				return; 
 			}
 
-			m_movementInput = (targetPosition - transform.position);
+			Vector2 direction = (targetPosition - transform.position);
+			m_movementInput = (!direction.IsNaN()) ? direction : Vector2.zero;
+
+			base.FixedUpdate();
 		}
 		#endregion
 	}
